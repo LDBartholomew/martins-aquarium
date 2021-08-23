@@ -11,6 +11,15 @@ let myFavoriteColor = "Yellow";
 export const getFish = () => {
     return fishCollection
 }
+export const getMostHolyFish = () => {
+    const holyFishArray = []
+
+    for (fishtaco of fishCollection) {
+        if(fishtaco.length % 3){
+            holyFishArray.push(fishtaco);
+        }
+    }
+}
 
 const fishCollection = [
     {
